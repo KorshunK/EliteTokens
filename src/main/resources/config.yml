@@ -1,0 +1,14 @@
+update-check: true
+
+min-tokens: 0
+max-tokens: 50000000 # Не устанавливайте слишком большие числа!
+menu-settings:
+  database-slot: 5
+  database-icon: GRASS_BLOCK
+database:
+  type: sqlite # mysql, sqlite
+  host: "localhost"
+  port: "3306"
+  dbName: "dbName"
+  username: "Username"
+  password: "Pass"

@@ -1,0 +1,42 @@
+name: EliteTokens
+version: '${project.version}'
+main: ru.squarecircle.elitetokens.EliteTokens
+api-version: '1.16'
+prefix: EliteTokens
+softdepend:
+  - PlaceholderAPI
+commands:
+  tokens:
+    aliases:
+      - t
+  elitetokens:
+    aliases:
+      - et
+permissions:
+  elitetokens.add:
+    description: Разрешение на выдачу валюты игроку
+    default: op
+  elitetokens.set:
+    description: Разрешение на установление значения валюты игроку
+    default: op
+  elitetokens.balance:
+    description: Разрешение на проверку своего баланса
+    default: op
+  elitetokens.remove:
+    description: Разрешение на удаление валюты у игрока
+    default: op
+  elitetokens.reset:
+    description: Разрешение на сброс токенов у игрока
+    default: op
+  elitetokens.balance.other:
+    description: Разрешение на проверку баланса другого игрока
+    default: op
+  elitetokens.reload:
+    description: Разрешение на перезагрузку плагина
+    default: op
+  elitetokens.help:
+    description: Разрешение на просмотр команд плагина
+    default: op
+  elitetokens.resetall:
+    description: Разрешение на сброс токенов у всех игроков
+    default: op
