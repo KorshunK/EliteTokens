@@ -3,8 +3,13 @@ update-check: true
 min-tokens: 0
 max-tokens: 50000000 # Не устанавливайте слишком большие числа!
 menu-settings:
+  menu-title: "Настройки EliteTokens"
   database-slot: 5
   database-icon: GRASS_BLOCK
+  setmintokens-icon: OAK_PLANKS
+  setmintokens-slot: 10
+  setmaxtokens-icon: BEDROCK
+  setmaxtokens-slot: 15
 database:
   type: sqlite # mysql, sqlite
   host: "localhost"

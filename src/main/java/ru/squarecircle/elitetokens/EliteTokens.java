@@ -10,6 +10,8 @@ import ru.squarecircle.elitetokens.commands.Commands;
 import ru.squarecircle.elitetokens.commands.EliteTokensCommand;
 import ru.squarecircle.elitetokens.core.API;
 import ru.squarecircle.elitetokens.core.UpdateChecker;
+import ru.squarecircle.elitetokens.events.Events;
+import ru.squarecircle.elitetokens.events.Events1;
 import ru.squarecircle.elitetokens.placeholders.Placeholder;
 import ru.squarecircle.elitetokens.utils.ConfigsUtil;
 
@@ -28,6 +30,8 @@ public final class EliteTokens extends JavaPlugin {
         getCommand("tokens").setTabCompleter(new Commands());
         getCommand("elitetokens").setExecutor(new EliteTokensCommand());
         getCommand("elitetokens").setTabCompleter(new EliteTokensCommand());
+        getServer().getPluginManager().registerEvents(new Events(this), this);
+        getServer().getPluginManager().registerEvents(new Events1(this), this);
         File file = new File(getFile().getAbsolutePath() + "/tokens-db.sqlite");
         saveDefaultConfig();
         loadMessages();

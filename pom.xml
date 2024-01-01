@@ -6,7 +6,7 @@
 
     <groupId>ru.squarecircle</groupId>
     <artifactId>EliteTokens</artifactId>
-    <version>1.2.4</version>
+    <version>1.3</version>
     <packaging>jar</packaging>
 
     <name>EliteTokens</name>

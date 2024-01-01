@@ -40,3 +40,12 @@ permissions:
   elitetokens.resetall:
     description: Разрешение на сброс токенов у всех игроков
     default: op
+  elitetokens.pay:
+    description: Разрешение на перевод токенов игроку
+    default: op
+  elitetokens.addall:
+    description: Разрешение на выдачу токенов всем игрокам
+    default: op
+  elitetokens.settings:
+    description: Разрешение на открытие меню настроек
+    default: op

@@ -21,3 +21,4 @@ max-number-changed: "&aВы изменили максимальное значе
 min-number-changed: "&aВы изменили минимальное значение валюты на {changed_number}"
 reset-all: "&cВы сбросили токены у всех игроков!"
 dont-have-tokens: "&cНе достаточно токенов!"
+settokens-message: "&cНапишите значение в чат"
