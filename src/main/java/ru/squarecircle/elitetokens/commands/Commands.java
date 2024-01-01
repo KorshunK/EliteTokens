@@ -240,6 +240,7 @@ public class Commands implements TabExecutor {
             list.add("reset");
             list.add("resetAll");
             list.add("set");
+            list.add("settings");
             list.add("vaip");
             return list;
         }

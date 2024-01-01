@@ -61,19 +61,6 @@ public class EliteTokensCommand implements TabExecutor {
                     sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&a/t balance - посмотреть свой баланс"));
                     sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "&a/t pay <Игрок> <Кол-во> - перевести деньги игроку"));
                 }
-                else if(args[0].equalsIgnoreCase("settings")) {
-                    if(!(sender instanceof Player)) {
-                        ChatUtil.messageTranslated(sender, "sender_not_player");
-                        return false;
-                    }
-                    Player player = (Player) sender;
-                    if(player.hasPermission("elitetokens.settings")) {
-                       Menu.openFor(player);
-                    }
-                }
-                else {
-                    ChatUtil.messageTranslated(sender, "dont_have_permission");
-                }
             }
             else if(args[0].equalsIgnoreCase("reload")) {
                 if(sender.hasPermission("elitetokens.reload")) {
@@ -91,9 +78,6 @@ public class EliteTokensCommand implements TabExecutor {
         else if(args.length == 0) {
             sender.sendMessage(ChatColor.GREEN + "EliteTokens v" + EliteTokens.getInstance().getDescription().getVersion());
             sender.sendMessage(ChatColor.RED + "Для помощи: /et help");
-        }
-        else {
-            ChatUtil.messageTranslated(sender, "command-error");
         }
         return false;
     }
